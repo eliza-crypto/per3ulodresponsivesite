@@ -20,6 +20,29 @@ a:focus {
 	text-decoration: none;
 	outline: none;
 }
+/* ----- BAGEL SHOP MENU STYLES ----- */
+
+.menu-section {
+    border: 4px solid #880007ff;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 750px;
+    margin: 0 auto 40px auto;
+    background-color: #fff1e6;
+}
+
+.menu-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #5a0005;
+}
+
+.menu-list li::before {
+    content: "🥯 ";
+}
+
 
 h2 { font-size: 2.2rem; }
 .thin-font { font-weight: 300; }
