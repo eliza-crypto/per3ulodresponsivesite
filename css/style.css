@@ -7,11 +7,12 @@ http://www.templatemo.com/488-classic
 -----------------------------*/
 
 body {
-	color: #8c8c8c;
+	color: #4b0000;
 	font-family: Georgia, serif;
 	font-size: 18px;
 	font-weight: 300;
 	overflow-x: hidden;
+	background-color: #e2cdb5;
 }
 
 a, button { transition: all 0.3s ease; }
@@ -81,23 +82,29 @@ h2 { font-size: 2.2rem; }
 	font-weight: 400;
 }
 
-.main-nav { font-size: 1.2rem; }
-
-.navbar-nav .nav-link {
-	border-radius: 6px;
-	color: black;
-	padding: 10px 40px;
+.main-nav {
+  font-size: 1.2rem;
 }
 
+.navbar-nav .nav-link {
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  padding: 10px 40px;
+  background-color: #4e0000;   /* ← ALWAYS visible */
+  display: inline-block;       /* ← keeps rounded corners */
+}
+
+/* hover / focus / active just change color */
 .nav-item.active .nav-link,
 .nav-link:hover,
 .nav-link:focus {
-	color: #880007ff;
-	background-color: #ECDBC7;
-
+  color: #e9d9c6;
 }
-
-.gold-text { color: #880007ff; }
+.navbar-nav .nav-item {
+  border-radius: 10px;
+  overflow: hidden; /* ← THIS is the key */
+}
+.gold-text { color: #3b0909; }
 
 .section {
 	padding-top: 80px;
@@ -107,6 +114,9 @@ h2 { font-size: 2.2rem; }
 .home-img-container {
 	background-image: url('../img/home-img.jpg');
 	background-size: auto;
+	border-style: solid;
+    border-color: rgb(51, 0, 0);
+	border-width: 10px;
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 500px;
@@ -119,6 +129,9 @@ h2 { font-size: 2.2rem; }
 .about-img-container,
 .blog-img-container,
 .contact-img-container {
+	border-style: solid;
+    border-color: rgb(51, 0, 0);
+	border-width: 10px;
 	background-size: auto 200px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -138,7 +151,8 @@ h2 { font-size: 2.2rem; }
 
 .content-box {
 	border-style: solid;
-    border-color: darkred;
+    border-color: rgb(51, 0, 0);
+	border-radius: 8px;
 	border-width: 10px;
 	max-width: 310px;
 	margin: 0 auto;
@@ -152,7 +166,7 @@ h4 {
 
 .btn {
 	color: white;
-	background-color: #ECDBC7;
+	background-color: #3b0909;
 	border: none;
 	border-radius: 5px;
 	display: inline-block;
@@ -358,14 +372,14 @@ p { line-height: 1.9; }
 	#tmNavbar .navbar-nav .nav-item { float: none; }
 	#tmNavbar .navbar-nav .nav-link { padding: 10px 35px; }
 	#tmNavbar {
-		background: white; 
+		background: rgb(255, 161, 161); 
 		border-radius: 6px;
 	}
 	#tmNavbar .navbar-nav .nav-item+.nav-item { margin-left: 0; }
 	.navbar-toggler {
-		background: white;
-		border-color: #cc9900;
-		color: #cc9900;
+		background: rgb(0, 0, 0);
+		border-color: #000000;
+		color: #ffffff;
 		display: block;
 		margin-left: auto;
 		margin-right: 0;
@@ -458,8 +472,8 @@ p { line-height: 1.9; }
 }
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #360a0a;
+  color: #ebd2bb;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -471,13 +485,67 @@ p { line-height: 1.9; }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #461313;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: #e2cdb5;
   display: none;
   overflow: hidden;
+}
+ /* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
