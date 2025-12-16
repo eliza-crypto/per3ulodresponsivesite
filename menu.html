@@ -10,81 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"> 
     <link rel="stylesheet" href="css/bootstrap.min.css">                                     
     <link rel="stylesheet" href="css/style.css">
-<style> * {
-  box-sizing: border-box;
-}
 
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide columns by default */
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-
-/* Add a grey background color on mouse-over */
-.btn:hover {
-  background-color: #ddd;
-}
-
-/* Add a dark background color to the active button */
-.btn.active {
-  background-color: #666;
-   color: white;
-}</style>
 
 </head>
 
@@ -129,123 +55,64 @@ h1 {
         </div>
 
         <div class="about-img-container">
-            
+            <br> <br> <br> <p class="display-4" style="color:white; text-align: center; text-shadow: 3px 3px 2px #000000">Menu</p>
         </div>
 
         <section class="section">
-    <div class="container-fluid">
+            <div class="container-fluid">
+                 <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="img_5terre.jpg" alt="Cinque Terre">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
-        <h2 class="gold-text title" style="text-align:center;">Our Menu</h2>
-        <p class="subtitle" style="text-align:center;">Freshly baked bagels, classic favorites, and deli-style creations.</p>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="img_forest.jpg" alt="Forest">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
-        <!-- BREAKFAST SECTION -->
-        <div class="menu-section">
-            <h3 class="gold-text">🥯 Breakfast</h3>
-            <ul class="menu-list">
-                <li>Egg and Cheese Bagels</li>
-                <li>Breakfast Favorites</li>
-                <li>Cream Cheese Delights</li>
-                <li>Fresh Baked Authentic Bagels</li>
-                <li>Deli Meat Sandwiches</li>
-                <li>Bagel Melts</li>
-                <li>Old Thyme Favorites</li>
-                <li>Fresh Salad Bagels</li>
-            </ul>
-        </div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="Northern Lights">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
-        <!-- BEVERAGES & SWEETS SECTION -->
-        <div class="menu-section">
-            <h3 class="gold-text">☕ Beverages & Sweets</h3>
-            <ul class="menu-list">
-                <li>Cold Beverages</li>
-                <li>Smoothies</li>
-                <li>Hot Beverages</li>
-            </ul>
-        </div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
-    </div>
-</section>
-
+<div class="clearfix"></div> 
+                </div>
+                
+                <div class="row margin-t-mid"></div>
+            </div>
+        </section>
+        
         
         <footer class="footer">
             <div class="container-fluid">
                 <div class="row">
-                    
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                        
-                        <div class="footer-content-box">
-                            <h3 class="gold-text title footer-content-box-title">Proin eu posuere felis</h3>
-                            <div class="gray-bg">
-                                <p>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                <p>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                <p><strong>Danny Egg (Executive)</strong></p>    
-                            </div>    
-                        </div>
-                                                
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                        <div class="footer-content-box footer-links-container">
-                        
-                            <h3 class="gold-text title footer-content-box-title">Nulla tortor dolor</h3>
-                            <nav>
-                                <ul class="nav">
-                                    <li><a href="#" class="footer-link">Tincidunt non faucibus</a></li>
-                                    <li><a href="#" class="footer-link">Vestibulum tempor</a></li>
-                                    <li><a href="#" class="footer-link">Fusce non turpis euismod</a></li>
-                                    <li><a href="#" class="footer-link">Lorem ipsum dolor sit</a></li>
-                                    <li><a href="#" class="footer-link">Nam in augue consectetur</a></li>
-                                    <li><a href="#" class="footer-link">Text Link Color #CCCC66</a></li>
-                                </ul>
-                            </nav>
-
-                        </div>
-                        
-                    </div>
-
-   
-                    <div class="clearfix hidden-lg-up"></div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="footer-content-box">
-                        
-                            <h3 class="gold-text title footer-content-box-title">Etiam mollis ornare</h3>
-                            <p class="margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p><hr class="margin-b-30">
-                            <p class="margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p><hr class="margin-b-30">
-                            <p class="margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                            <a href="#" class="btn btn-gray text-uppercase">Read More</a>
-
-                        </div>
-                        
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="footer-content-box">
-                        
-                            <h3 class="gold-text title footer-content-box-title">Fusce non turpis</h3>
-                            <div class="margin-b-30">
-                                <img src="img/img-100x100-1.jpg" alt="Image" class="footer-thumbnail">
-                                <img src="img/img-100x100-2.jpg" alt="Image" class="footer-thumbnail">
-                                <img src="img/img-100x100-3.jpg" alt="Image" class="footer-thumbnail">
-                                <img src="img/img-100x100-4.jpg" alt="Image" class="footer-thumbnail">
-                                <img src="img/img-100x100-5.jpg" alt="Image" class="footer-thumbnail">
-                                <img src="img/img-100x100-6.jpg" alt="Image" class="footer-thumbnail">
-                            </div>
-                            <p class="margin-b-20">Curabitur dui massa, aliquam quis mi sed, tempor vulputate tellus. Sed vestibulum non neque.</p>
-                            <a href="#" class="btn btn-gray text-uppercase">Browse</a>
-
-                        </div>
-                        
-                    </div>
-
-
+                  <div class="clearfix hidden-lg-up"></div>
                 </div>
 
                 <div class="row">
                     <div class="col-xs-12 copyright-col">
-                        <p class="copyright-text">Copyright 2016 Your Company Name</p>
+                        <p class="copyright-text">Copyright &copy; 2025 101 Bagels</p>
                     </div>
                 </div>
             </div>
@@ -255,6 +122,6 @@ h1 {
         <script src="js/jquery-1.11.3.min.js"></script>
         <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> 
         <script src="js/bootstrap.min.js"></script>
-
+       
 </body>
 </html>
